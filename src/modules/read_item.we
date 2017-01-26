@@ -1,0 +1,51 @@
+<template>
+
+    <div class="item-content">
+        <img class="item-img" src="{{image}}"/>
+        <div class="item-text">
+            <text class="date">{{date}}</text>
+            <text class="text-title">{{title}}</text>
+        </div>
+    </div>
+
+</template>
+
+<style>
+    .item-content{
+        flex-direction: row;
+    }
+    .item-img{
+        flex:1;
+        margin-top: 15px;
+        margin-right: 20px;
+        width: 30px;
+        height: 120px;
+    }
+    .item-text {
+        flex: 4;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .text-title {
+        color: black;
+        font-size: 36px;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+        /*width:700px;*/
+    }
+
+    .date {
+        color: #7a7a7a;
+    }
+
+</style>
+
+<script>
+    require('weex-components');
+    module.exports = {
+        methods: {},
+        data: {date: '', title: '', image: ''}
+    }
+</script>

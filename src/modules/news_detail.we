@@ -1,0 +1,79 @@
+<template>
+    <div>
+        <scroller class="scroll">
+            <div class="scroll-content">
+                <text class="text-title">{{news_title}}</text>
+                <text class="text-content">{{news_content}}</text>
+            </div>
+        </scroller>
+    </div>
+</template>
+
+<style>
+
+    .scroll {
+        /*padding-left: 30px;*/
+        /*padding-right: 30px;*/
+    }
+
+    .scroll-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .separate-line {
+        background-color: #d4d4d4;
+        height: 1px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .text-title {
+        color: black;
+        font-size: 40px;
+        margin-top: 26px;
+        font-weight: bold;
+    }
+
+    .text-content {
+        color: #333;
+        margin-top: 28px;
+    }
+
+</style>
+
+<script>
+    require('weex-components');
+    var apis = require('../common/api');
+    module.exports = {
+        data: {
+            news_content: '',
+            news_title: '',
+            new_image: ''
+        },
+        created: function () {
+            var self = this;
+            var bundleUrl = this.$getConfig().bundleUrl;
+            var contentId = self.getParameterByName('id', bundleUrl);
+            if (contentId.lastIndexOf('?') != -1) {
+                contentId = contentId.substr(0, contentId.lastIndexOf('?'));
+            }
+            //请求数据
+            apis.getNewsDetail(contentId, function (ret) {
+                self.news_content = ret.body;
+                self.news_title = ret.title;
+                self.news_image = ret.image;
+            });
+        },
+        methods: {
+            getParameterByName: function (name, url) {
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            },
+        }
+    }
+</script>

@@ -1,0 +1,88 @@
+<template>
+    <list class="news-list">
+        <refresh class="refresh_view" display="{{refresh_display}}" onrefresh="onRefresh" >
+                <text class="refresh-arrow" if="{{(refresh_display==='hide')}}">刷新中...</text>
+                <loading-indicator></loading-indicator>
+        </refresh>
+
+        <cell class="list_item" repeat="item in newsList" newsid="{{item.id}}"
+                onclick="onNewsDetail" >
+                <read_item title="{{item.title}}" date="{{date}}"
+                image="{{item.images[0]}}"></read_item>
+        </cell>
+    </list>
+</template>
+
+<style>
+    .news-list{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list_item{
+        justify-content: center;
+        border-bottom-width: 1px;
+        border-bottom-color: #d4d4d4;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .refresh_view{
+        height: 80px;
+        width: 750px;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<script>
+    require('weex-components');
+    var apis = require('../common/api');
+    var navigator = require('@weex-module/navigator');
+
+    module.exports = {
+        data: {
+            refresh_display: 'hide',
+            newsList: [],
+            date:"",
+            baseURL: ''
+        },
+        methods: {
+            onRefresh: function (e) {
+                  var self = this;
+                  self.refresh_display = 'show';
+                  self.getNewsData();
+                  self.refresh_display = 'hide';
+                },
+            getNewsData:function() {
+                var self=this;
+                apis.getNewsList(function(ret) {
+                    self.date=ret.date;
+                    for (var i = 0; i < ret.stories.length; i++) {
+                        var items = ret.stories[i];
+                        self.newsList.push(items);
+                    }
+                })
+                },
+                onNewsDetail: function (e) {
+                     var itemid = e.target.attr.newsid;
+                     var params = {
+                         'url': this.baseURL + 'modules/news_detail.js?id=' + itemid,
+                         'animated': 'true'
+                     };
+                     navigator.push(params, function (e) {
+                     });
+                }
+            },
+             created:function() {
+                            var self = this;
+                            self.getNewsData();
+                            var base = apis.getBaseUrl(self.$getConfig().bundleUrl, true);
+                            self.baseURL = base;
+                        },
+             ready:function() {
+                        }
+    }
+</script>
