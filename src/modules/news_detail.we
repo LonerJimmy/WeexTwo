@@ -1,55 +1,27 @@
 <template>
-    <div>
-        <scroller class="scroll">
-            <div class="scroll-content">
-                <text class="text-title">{{news_title}}</text>
-                <text class="text-content">{{news_content}}</text>
-            </div>
-        </scroller>
+    <div class="wrapper">
+       <web ref="webview" src="{{news_url}}" class="webview" ></web>
     </div>
 </template>
 
 <style>
-
-    .scroll {
-        /*padding-left: 30px;*/
-        /*padding-right: 30px;*/
-    }
-
-    .scroll-content {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .separate-line {
-        background-color: #d4d4d4;
-        height: 1px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    .text-title {
-        color: black;
-        font-size: 40px;
-        margin-top: 26px;
-        font-weight: bold;
-    }
-
-    .text-content {
-        color: #333;
-        margin-top: 28px;
-    }
+    .webview {
+        width: 750px;
+        height: 1050px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #41B883;
+      }
 
 </style>
 
 <script>
     require('weex-components');
+    const webview = require('@weex-module/webview');
     var apis = require('../common/api');
     module.exports = {
         data: {
-            news_content: '',
-            news_title: '',
-            new_image: ''
+            news_url: '',
         },
         created: function () {
             var self = this;
@@ -60,9 +32,8 @@
             }
             //请求数据
             apis.getNewsDetail(contentId, function (ret) {
-                self.news_content = ret.body;
+                self.news_url = ret.share_url;
                 self.news_title = ret.title;
-                self.news_image = ret.image;
             });
         },
         methods: {
