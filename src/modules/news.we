@@ -1,19 +1,63 @@
 <template>
-    <list class="news-list">
+
+    <div>
+        <list class="news-list">
         <refresh class="refresh_view" display="{{refresh_display}}" onrefresh="onRefresh" >
                 <text class="refresh-arrow" if="{{(refresh_display==='hide')}}">刷新中...</text>
                 <loading-indicator></loading-indicator>
         </refresh>
+
+        <cell class="top-slider">
+                        <slider class="top-slider" append="tree" auto-play="true" interval="5000">
+                            <indicator class="indicator"></indicator>
+                            <div repeat="img in imageList">
+                                <image class="slider-item" src="{{img.image}}" imgid="{{img.id}}" onclick="onSliderItemClick"></image>
+                                 <text class="title">{{img.title}}</text>
+                            </div>
+                        </slider>
+        </cell>
 
         <cell class="list_item" repeat="item in newsList" newsid="{{item.id}}"
                 onclick="onNewsDetail" >
                 <read_item title="{{item.title}}" date="{{date}}"
                 image="{{item.images[0]}}"></read_item>
         </cell>
-    </list>
+        </list>
+    </div>
 </template>
 
 <style>
+   .top-slider {
+           flex-direction: row;
+           top: 20px;
+           height: 500px;
+           width: 750px;
+       }
+
+       .title {
+           position: absolute;
+           bottom: 42px;
+           left: 20px;
+           width: 500px;
+           color: #FFFFFF;
+           font-size: 28px;
+         }
+
+       .slider-item {
+           height: 500px;
+           width: 750px;
+       }
+        .indicator {
+            position: absolute;
+            width: 690px;
+            height: 400px;
+            top: 240px;
+            left: 240px;
+            itemColor: #dddddd;
+            itemSelectedColor: #45b5f0;
+            item-size: 15;
+    }
+
     .news-list{
         margin-left: 20px;
         margin-right: 20px;
@@ -46,6 +90,7 @@
         data: {
             refresh_display: 'hide',
             newsList: [],
+            imageList:[],
             date:"",
             baseURL: ''
         },
@@ -64,6 +109,7 @@
                         var items = ret.stories[i];
                         self.newsList.push(items);
                     }
+                    self.imageList=ret.top_stories;
                 })
                 },
                 onNewsDetail: function (e) {
@@ -74,6 +120,15 @@
                      };
                      navigator.push(params, function (e) {
                      });
+                },
+                onSliderItemClick: function(e) {
+                    var itemid = e.target.attr.imgid;
+                    var params = {
+                         'url': this.baseURL + 'modules/news_detail.js?id=' + itemid,
+                         'animated': 'true'
+                    };
+                    navigator.push(params, function (e) {
+                    });
                 }
             },
              created:function() {

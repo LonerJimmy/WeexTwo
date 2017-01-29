@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="news detail web view added">
+    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/news.we" afterPath="$PROJECT_DIR$/src/modules/news.we" />
     </list>
+    <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
     <ignored path="WeexOne.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,15 +25,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.we" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.we" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/read.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
@@ -49,13 +67,19 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onNewsDetail</find>
       <find>news_content</find>
       <find>webview</find>
       <find>new_image</find>
       <find>getParameterByName</find>
       <find>content</find>
       <find>news_url</find>
+      <find>newsList</find>
+      <find>top-slider</find>
+      <find>itemid</find>
+      <find>imageList</find>
+      <find>onNewsDetail</find>
+      <find>onSliderItemClick</find>
+      <find>indicator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,13 +112,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main.we" />
         <option value="$PROJECT_DIR$/src/modules/carouse-list.we" />
-        <option value="$PROJECT_DIR$/src/modules/read.we" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/weexone" />
         <option value="$PROJECT_DIR$/src/common/api.js" />
         <option value="$PROJECT_DIR$/weextwo" />
         <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
+        <option value="$PROJECT_DIR$/src/modules/read.we" />
+        <option value="$PROJECT_DIR$/src/modules/news.we" />
       </list>
     </option>
   </component>
@@ -155,6 +180,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -191,7 +266,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news_detail.we" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/common/api.js&#10;news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news_detail.we" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
   </component>
   <component name="RecentsManager">
@@ -301,7 +376,7 @@
       <workItem from="1485444927353" duration="2000" />
       <workItem from="1485445069128" duration="205000" />
       <workItem from="1485445776448" duration="75000" />
-      <workItem from="1485693504779" duration="4586000" />
+      <workItem from="1485693504779" duration="8668000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -349,11 +424,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74233000" />
+    <option name="totallyTimeSpent" value="78315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="1280" height="717" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28832406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -362,7 +437,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268921" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268921" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,11 +537,9 @@
     <entry file="file://$PROJECT_DIR$/src/modules/essay-detail.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/carouse-list.we" />
     <entry file="file://$PROJECT_DIR$/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/modules/read.we" />
     <entry file="file://$PROJECT_DIR$/weexone" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/src/main.we" />
-    <entry file="file://$PROJECT_DIR$/src/common/api.js" />
     <entry file="file://$PROJECT_DIR$/weextwo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -483,12 +556,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
+    <entry file="file://$PROJECT_DIR$/src/common/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
