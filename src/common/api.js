@@ -22,8 +22,8 @@ var apiURL = {
     movieList: '/movie/list/',
     movieDetail: '/movie/detail/',
     API_NEWS_URL: 'http://news-at.zhihu.com/api/4/news/latest',
-    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/'
-
+    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/',
+    API_NEWS_MORE:'http://news-at.zhihu.com/api/4/news/before/'
 };
 function getData(url, callback) {
     stream.sendHttp({
@@ -63,6 +63,9 @@ exports.getMovieDetail = function (id, callback) {
     getData(apiURL.baseurl + apiURL.movieDetail + id, callback);
 
 };
+exports.getMoreNewsList=function (date,callback) {
+    getData(apiURL.API_NEWS_MORE + date,callback);
+}
 exports.getNewsList = function (callback) {
     getData(apiURL.API_NEWS_URL, callback);
 }

@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="删除idea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
+    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/api.js" afterPath="$PROJECT_DIR$/src/common/api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/news.we" afterPath="$PROJECT_DIR$/src/modules/news.we" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
@@ -47,15 +49,22 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.we" pinned="false" current-in-tab="false">
+      <file leaf-file-name="news.we" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_item.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
@@ -68,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav_bar_normal.we" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav_bar_normal.we" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
@@ -110,6 +119,14 @@
       <find>one</find>
       <find>showback</find>
       <find>nav_logo</find>
+      <find>onloading</find>
+      <find>loading_display</find>
+      <find>refresh_display</find>
+      <find>loading</find>
+      <find>onLoading</find>
+      <find>date</find>
+      <find>currentIndex</find>
+      <find>index</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,14 +161,14 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/weexone" />
-        <option value="$PROJECT_DIR$/src/common/api.js" />
         <option value="$PROJECT_DIR$/weextwo" />
         <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
         <option value="$PROJECT_DIR$/src/modules/read.we" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/modules/news.we" />
         <option value="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
+        <option value="$PROJECT_DIR$/src/common/api.js" />
+        <option value="$PROJECT_DIR$/src/modules/news.we" />
       </list>
     </option>
   </component>
@@ -398,7 +415,7 @@
       <workItem from="1485693504779" duration="9456000" />
       <workItem from="1485737563123" duration="33000" />
       <workItem from="1485737633563" duration="11000" />
-      <workItem from="1485737663242" duration="2306000" />
+      <workItem from="1485737663242" duration="6241000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -456,11 +473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485705613031</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="title添加">
+      <created>1485744785530</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1485744785530</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81453000" />
+    <option name="totallyTimeSpent" value="85388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -525,7 +549,8 @@
     <MESSAGE value="top new view added" />
     <MESSAGE value="添加readme" />
     <MESSAGE value="删除idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除idea" />
+    <MESSAGE value="title添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="title添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -534,7 +559,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.we" />
     <entry file="file://$PROJECT_DIR$/src/common/api.js" />
     <entry file="file://$PROJECT_DIR$/weexone" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
@@ -580,14 +604,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -620,22 +636,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
+    <entry file="file://$PROJECT_DIR$/src/common/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>

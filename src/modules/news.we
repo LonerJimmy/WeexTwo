@@ -20,9 +20,17 @@
 
         <cell class="list_item" repeat="item in newsList" newsid="{{item.id}}"
                 onclick="onNewsDetail" >
-                <read_item title="{{item.title}}" date="{{date}}"
-                image="{{item.images[0]}}"></read_item>
+                <read_item title="{{item.title}}"
+                image="{{item.images[0]}}"></read_item>s
         </cell>
+
+         <loading class="refresh-view" display="{{loading_display}}" onloading="onLoading">
+            <text class="refresh-arrow"
+                  if="{{(refresh_display==='hide')}}">加载更多
+            </text>
+            <loading-indicator></loading-indicator>
+         </loading>
+
         </list>
     </div>
 </template>
@@ -58,6 +66,18 @@
             item-size: 15;
     }
 
+     .refresh-view {
+            height: 80px;
+            width: 750px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .refresh-arrow {
+            font-size: 30px;
+            color: #45b5f0;
+        }
+
     .news-list{
         margin-left: 20px;
         margin-right: 20px;
@@ -91,26 +111,28 @@
             refresh_display: 'hide',
             newsList: [],
             imageList:[],
-            date:"",
-            baseURL: ''
+            baseURL: '',
+            loading_display: 'hide',
+            currentIndex:0
         },
         methods: {
-            onRefresh: function (e) {
+                onRefresh: function (e) {
                   var self = this;
                   self.refresh_display = 'show';
                   self.getNewsData();
                   self.refresh_display = 'hide';
                 },
-            getNewsData:function() {
-                var self=this;
-                apis.getNewsList(function(ret) {
-                    self.date=ret.date;
-                    for (var i = 0; i < ret.stories.length; i++) {
-                        var items = ret.stories[i];
-                        self.newsList.push(items);
-                    }
+                getNewsData:function() {
+                    var self=this;
+                    apis.getNewsList(function(ret) {
+                        self.currentIndex=ret.date;
+
+                        for (var i = 0; i < ret.stories.length; i++) {
+                            var items = ret.stories[i];
+                            self.newsList.push(items);
+                        }
                     self.imageList=ret.top_stories;
-                })
+                    })
                 },
                 onNewsDetail: function (e) {
                      var itemid = e.target.attr.newsid;
@@ -120,6 +142,24 @@
                      };
                      navigator.push(params, function (e) {
                      });
+                },
+                onLoading: function (e) {
+                    var self = this;
+                    this.loading_display = "show";
+                    self.refresh_display = 'show';
+
+                    self.getMoreNews(--self.currentIndex);
+                    self.loading_display = "hide";
+                    self.refresh_display = 'hide';
+                },
+                getMoreNews:function(index) {
+                    var self=this;
+                    apis.getMoreNewsList(index,function(ret) {
+                        for (var i = 0; i < ret.stories.length; i++) {
+                            var items = ret.stories[i];
+                            self.newsList.push(items);
+                        }
+                    })
                 },
                 onSliderItemClick: function(e) {
                     var itemid = e.target.attr.imgid;
@@ -132,12 +172,12 @@
                 }
             },
              created:function() {
-                            var self = this;
-                            self.getNewsData();
-                            var base = apis.getBaseUrl(self.$getConfig().bundleUrl, true);
-                            self.baseURL = base;
-                        },
+                var self = this;
+                self.getNewsData();
+                var base = apis.getBaseUrl(self.$getConfig().bundleUrl, true);
+                self.baseURL = base;
+            },
              ready:function() {
-                        }
+             }
     }
 </script>
