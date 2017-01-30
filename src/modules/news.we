@@ -124,9 +124,9 @@
                 },
                 getNewsData:function() {
                     var self=this;
+                    self.newsList=[];
                     apis.getNewsList(function(ret) {
                         self.currentIndex=ret.date;
-
                         for (var i = 0; i < ret.stories.length; i++) {
                             var items = ret.stories[i];
                             self.newsList.push(items);
