@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
+    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="下来加载更多">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav_bar_normal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/api.js" afterPath="$PROJECT_DIR$/src/common/api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/news.we" afterPath="$PROJECT_DIR$/src/modules/news.we" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/news_detail.we" afterPath="$PROJECT_DIR$/src/modules/news_detail.we" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
     <list id="c5a9e037-0dd6-4891-bd87-1bdf9a73a1f5" name="Failed commit: Default (2)" comment="top new view added" />
@@ -39,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="false">
+      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
@@ -56,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.we" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news.we" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/news.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
@@ -84,8 +75,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="movie-detail.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/movie-detail.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="nav-bar-normal.we" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="essay-detail.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/essay-detail.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question-detail.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/question-detail.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
@@ -117,8 +129,6 @@
       <find>onSliderItemClick</find>
       <find>indicator</find>
       <find>one</find>
-      <find>showback</find>
-      <find>nav_logo</find>
       <find>onloading</find>
       <find>loading_display</find>
       <find>refresh_display</find>
@@ -126,7 +136,12 @@
       <find>onLoading</find>
       <find>date</find>
       <find>currentIndex</find>
+      <find>onBackClick</find>
+      <find>item</find>
       <find>index</find>
+      <find>showback</find>
+      <find>nav_logo</find>
+      <find>onbackclick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,13 +177,14 @@
         <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/weexone" />
         <option value="$PROJECT_DIR$/weextwo" />
-        <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
         <option value="$PROJECT_DIR$/src/modules/read.we" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
         <option value="$PROJECT_DIR$/src/common/api.js" />
+        <option value="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
         <option value="$PROJECT_DIR$/src/modules/news.we" />
+        <option value="$PROJECT_DIR$/src/modules/movie-detail.we" />
+        <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
       </list>
     </option>
   </component>
@@ -241,11 +257,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="playground" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,7 +312,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news.we&#10;api&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/common/api.js" />
+    <property name="SearchEverywhereHistoryKey" value="movie&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/movie-detail.we&#10;newsd&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news_detail.we&#10;news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news.we&#10;api&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/common/api.js" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
   </component>
   <component name="RecentsManager">
@@ -415,7 +431,7 @@
       <workItem from="1485693504779" duration="9456000" />
       <workItem from="1485737563123" duration="33000" />
       <workItem from="1485737633563" duration="11000" />
-      <workItem from="1485737663242" duration="6241000" />
+      <workItem from="1485737663242" duration="8205000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -480,24 +496,33 @@
       <option name="project" value="LOCAL" />
       <updated>1485744785530</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="下来加载更多">
+      <created>1485749398971</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1485749398971</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85388000" />
+    <option name="totallyTimeSpent" value="87352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Weex Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3309659" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31678832" sideWeight="0.50292397" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32670453" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -514,7 +539,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -522,7 +546,6 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -550,7 +573,8 @@
     <MESSAGE value="添加readme" />
     <MESSAGE value="删除idea" />
     <MESSAGE value="title添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="title添加" />
+    <MESSAGE value="下来加载更多" />
+    <option name="LAST_COMMIT_MESSAGE" value="下来加载更多" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -559,9 +583,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/common/api.js" />
-    <entry file="file://$PROJECT_DIR$/weexone" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/src/main.we" />
     <entry file="file://$PROJECT_DIR$/src/common/api.js" />
     <entry file="file://$PROJECT_DIR$/weexone" />
@@ -593,17 +614,11 @@
     <entry file="file://$PROJECT_DIR$/node_modules/weex-components/src/wxc-list-item.we" />
     <entry file="file://$PROJECT_DIR$/node_modules/weex-components/src/wxc-navbar.we" />
     <entry file="file://$PROJECT_DIR$/node_modules/weex-components/src/wxc-navpage.we" />
-    <entry file="file://$PROJECT_DIR$/src/modules/essay-detail.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/carouse-list.we" />
     <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/weexone" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/src/main.we" />
-    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -636,6 +651,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav_bar_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/essay-detail.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/question-detail.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
@@ -646,25 +704,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/movie-detail.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>

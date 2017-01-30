@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <nav_bar_normal></nav_bar_normal>
+        <nav_bar_normal title="新闻"></nav_bar_normal>
         <list class="news-list">
          <refresh class="refresh_view" display="{{refresh_display}}" onrefresh="onRefresh" >
              <text class="refresh-arrow" if="{{(refresh_display==='hide')}}">刷新中...</text>

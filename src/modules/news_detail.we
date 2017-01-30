@@ -1,5 +1,6 @@
 <template>
     <div class="wrapper">
+        <nav_bar_normal title="新闻" ></nav_bar_normal>
        <web ref="webview" src="{{news_url}}" class="webview" ></web>
     </div>
 </template>
@@ -35,6 +36,7 @@
                 self.news_url = ret.share_url;
                 self.news_title = ret.title;
             });
+
         },
         methods: {
             getParameterByName: function (name, url) {
