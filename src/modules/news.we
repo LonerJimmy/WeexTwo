@@ -1,20 +1,21 @@
 <template>
 
     <div>
+        <nav_bar_normal></nav_bar_normal>
         <list class="news-list">
-        <refresh class="refresh_view" display="{{refresh_display}}" onrefresh="onRefresh" >
-                <text class="refresh-arrow" if="{{(refresh_display==='hide')}}">刷新中...</text>
-                <loading-indicator></loading-indicator>
-        </refresh>
+         <refresh class="refresh_view" display="{{refresh_display}}" onrefresh="onRefresh" >
+             <text class="refresh-arrow" if="{{(refresh_display==='hide')}}">刷新中...</text>
+             <loading-indicator></loading-indicator>
+         </refresh>
 
         <cell class="top-slider">
-                        <slider class="top-slider" append="tree" auto-play="true" interval="5000">
-                            <indicator class="indicator"></indicator>
-                            <div repeat="img in imageList">
-                                <image class="slider-item" src="{{img.image}}" imgid="{{img.id}}" onclick="onSliderItemClick"></image>
-                                 <text class="title">{{img.title}}</text>
-                            </div>
-                        </slider>
+             <slider class="top-slider" append="tree" auto-play="true" interval="5000">
+                    <indicator class="indicator"></indicator>
+                    <div repeat="img in imageList">
+                         <image class="slider-item" src="{{img.image}}" imgid="{{img.id}}" onclick="onSliderItemClick"></image>
+                         <text class="title">{{img.title}}</text>
+                    </div>
+              </slider>
         </cell>
 
         <cell class="list_item" repeat="item in newsList" newsid="{{item.id}}"
@@ -29,7 +30,6 @@
 <style>
    .top-slider {
            flex-direction: row;
-           top: 20px;
            height: 500px;
            width: 750px;
        }
