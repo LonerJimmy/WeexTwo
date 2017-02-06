@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/note_detail.we" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/note_item.we" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/notes.we" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/appframework/appframework.iml" afterPath="$PROJECT_DIR$/android/appframework/appframework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav_bar_normal.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav_bar_normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" afterPath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/api.js" afterPath="$PROJECT_DIR$/src/common/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.we" afterPath="$PROJECT_DIR$/src/main.we" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/nav_bar_normal.we" afterPath="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/news.we" afterPath="$PROJECT_DIR$/src/modules/news.we" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/note_detail.we" afterPath="$PROJECT_DIR$/src/modules/note_detail.we" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/notes.we" afterPath="$PROJECT_DIR$/src/modules/notes.we" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
     <list id="c5a9e037-0dd6-4891-bd87-1bdf9a73a1f5" name="Failed commit: Default (2)" comment="top new view added" />
@@ -38,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -121,11 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item</find>
-      <find>新闻</find>
-      <find>0x</find>
-      <find>selected-color</find>
-      <find>return</find>
       <find>undefined</find>
       <find>currentIndex</find>
       <find>index</find>
@@ -143,14 +119,19 @@
       <find>titletext</find>
       <find>titlearea</find>
       <find>getNotes</find>
-      <find>notesList</find>
-      <find>storage</find>
       <find>onWriteNote</find>
       <find>onwritenote</find>
       <find>onSave</find>
-      <find>getAll</find>
       <find>title</find>
+      <find>onTextAreaChange</find>
+      <find>addStorage</find>
+      <find>storage</find>
+      <find>onCancel</find>
+      <find>notesList</find>
+      <find>success</find>
+      <find>getAll</find>
       <find>onTextChange</find>
+      <find>dateList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/modules/read.we" />
         <option value="$PROJECT_DIR$/src/modules/news.we" />
         <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
+        <option value="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/notes.js" />
         <option value="$PROJECT_DIR$/src/modules/notes.we" />
         <option value="$PROJECT_DIR$/src/modules/note_detail.we" />
       </list>
@@ -452,7 +434,7 @@
       <workItem from="1485737633563" duration="11000" />
       <workItem from="1485737663242" duration="14906000" />
       <workItem from="1485962931164" duration="62000" />
-      <workItem from="1485997964044" duration="17380000" />
+      <workItem from="1485997964044" duration="21543000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -545,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485779039032</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="日记模块添加">
+      <created>1486377273736</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1486377273736</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111495000" />
+    <option name="totallyTimeSpent" value="115658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -619,7 +608,8 @@
     <MESSAGE value="标题栏" />
     <MESSAGE value="bug修改" />
     <MESSAGE value="tab修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="tab修改" />
+    <MESSAGE value="日记模块添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="日记模块添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,7 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/main.we" />
     <entry file="file://$PROJECT_DIR$/modules/essay-detail.we" />
     <entry file="file://$PROJECT_DIR$/modules/carouse-item.we" />
     <entry file="file://$PROJECT_DIR$/modules/carouse-list.we" />
@@ -804,6 +793,14 @@
     <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="2537" column="33" lean-forward="true" selection-start-line="2537" selection-start-column="33" selection-end-line="2537" selection-end-column="33" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/notes.we">

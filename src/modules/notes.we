@@ -34,8 +34,8 @@
     module.exports = {
             data: {
                 notesList:[],
-                dateList:[],
                 titleList:[],
+                dateList:[],
                 contentList:[],
                 baseURL:''
             },
@@ -43,25 +43,30 @@
                 getNotes:function() {
                     var self=this;
                     self.notesList=[];
-                    self.notesList=this.getAll();
-                    var divide=[];
-                    var items;
-                    if(self.notesList!= undefined && self.notesList.length>0){
-                        for (var i = 0; i < self.notesList.length; i++) {
-                            items = self.notesList[i];
-                            divide=items.split('/');
-                            self.dateList.push(divide[2]);
-                            self.titleList.push(divide[0]);
-                            self.contentList.push(divide[1]);
-                        }
-                    }
+                    self.getAll();
                 },
 
                 getAll: function() {
+                    var self=this;
                     storage.getAllKeys(e => {
-                        if (e.result == 'success' && e.data.length)
-                            return e.data;
-                        return [];
+                        if (e.result == 'success')
+                            self.notesList=e.data;
+                            var divide=[];
+                            var items;
+                            if(self.notesList!= undefined && self.notesList.length>0){
+                                for (var i = 0; i < self.notesList.length; i++) {
+                                    items = self.notesList[i];
+                                    storage.getItem(items, function (e) {
+                                      divide=e.data.split('/');
+                                      if(divide!=undefined && divide.length>1){
+                                          self.titleList.push(divide[0]);
+                                          self.contentList.push(divide[1]);
+                                          self.dateList.push(divide[2]);
+                                      }
+                                    });
+
+                                }
+                            }
                     });
                 },
                 getStorage: function(key) {

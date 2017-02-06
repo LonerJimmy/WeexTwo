@@ -2,11 +2,11 @@
     <div class="all">
         <div class="title">
             <text class="titletext">标题</text>
-            <textarea class="titlearea" input="onTextChange" rows="1"></textarea>
+            <input type="text" class="titlearea" autofocus="true" oninput="onTextChange" rows="1"/>
         </div>
 
         <div class="content">
-            <textarea class="contentarea" input="onTextAreaChange" rows="10"></textarea>
+            <input type="text" class="contentarea" autofocus="true" oninput="onTextAreaChange" rows="10"/>
         </div>
 
         <div class="button">
@@ -70,7 +70,6 @@
 
 <script>
     require('weex-components');
-    var storage = require('@weex-module/storage');
     var navigator = require('@weex-module/navigator');
 
     module.exports = {
@@ -81,18 +80,24 @@
             date: ''
         },
         methods: {
-            onTextChange (event) {
+            onTextChange:function(event) {
                 this.title=event.value;
+                this.date=event.timestamp;
             },
-            onTextAreaChange(event){
+            onTextAreaChange:function(event){
                 this.content=event.value;
+                this.date=event.timestamp;
             },
             addStorage: function (key, value) {
+                var storage = require('@weex-module/storage');
                 storage.setItem(key, value, function (e) {
-                    if (e.result == 'success' || e.data == undefined) {
-                        return true;
-                    } else {
-                        return false;
+                    if (e.result == 'success') {
+                        var params = {
+                            'animated': 'true'
+                        };
+                        navigator.pop(params, function (e) {
+                            //callback
+                        });
                     }
                 });
             },
@@ -105,11 +110,7 @@
                 return decodeURIComponent(results[2].replace(/\+/g, " "));
             },
             onSave: function() {
-                if(this.addStorage("WeexTwo"+this.id,this.title+"/"+this.content+"/"+this.date)){
-                    this.$emit('addnote', {});
-                    this.onCancel()
-                }
-
+                this.addStorage("WeexTwo"+this.id,this.title+"/"+this.content+"/"+this.date);
             },
             onCancel: function() {
                 var params = {
