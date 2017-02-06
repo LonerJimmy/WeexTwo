@@ -34,6 +34,7 @@ function getData(url, callback) {
         callback(retdata);
     });
 }
+
 exports.getHome = function (dateStr, callback) {
     getData(apiURL.baseurl + apiURL.homePage + dateStr, callback);
 };

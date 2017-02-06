@@ -1,0 +1,37 @@
+<template>
+
+    <div class="item-content">
+        <text class="title">{{title}}</text>
+        <text class="date">{{date}}</text>
+    </div>
+
+</template>
+
+<style>
+    .item-content{
+        flex-direction: column;
+    }
+
+    .title {
+        flex: 2;
+        color: black;
+        font-size: 36px;
+        margin-top: 10px;
+        font-weight: bold;
+        /*width:700px;*/
+    }
+
+    .date {
+        color: #7a7a7a;
+        flex: 1;
+    }
+
+</style>
+
+<script>
+    require('weex-components');
+    module.exports = {
+        methods: {},
+        data: {date: '', title: ''}
+    }
+</script>

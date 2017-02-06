@@ -1,0 +1,132 @@
+<template>
+    <div class="all">
+        <div class="title">
+            <text class="titletext">标题</text>
+            <textarea class="titlearea" input="onTextChange" rows="1"></textarea>
+        </div>
+
+        <div class="content">
+            <textarea class="contentarea" input="onTextAreaChange" rows="10"></textarea>
+        </div>
+
+        <div class="button">
+            <text class="save" onclick="onCancel">取消</text>
+            <text class="save" onclick="onSave">保存</text>
+        </div>
+    </div>
+</template>
+
+<style>
+    .all{
+        flex-direction: column;
+    }
+    .title {
+        flex: 1;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .button{
+        flex: 1;
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    .contentarea{
+        height: 700px;
+        margin: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #a5a5a5;
+    }
+
+    .save{
+        flex: 1;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .content{
+        flex: 6;
+    }
+
+    .titletext{
+        flex: 1;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .titlearea{
+        flex: 4;
+        margin-top: 30px;
+        padding-top: 1px;
+        margin-right: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #a5a5a5;
+    }
+</style>
+
+<script>
+    require('weex-components');
+    var storage = require('@weex-module/storage');
+    var navigator = require('@weex-module/navigator');
+
+    module.exports = {
+        data:{
+            id:'',
+            title: '',
+            content:'',
+            date: ''
+        },
+        methods: {
+            onTextChange (event) {
+                this.title=event.value;
+            },
+            onTextAreaChange(event){
+                this.content=event.value;
+            },
+            addStorage: function (key, value) {
+                storage.setItem(key, value, function (e) {
+                    if (e.result == 'success' || e.data == undefined) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+            },
+            getParameterByName: function (name, url) {
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            },
+            onSave: function() {
+                if(this.addStorage("WeexTwo"+this.id,this.title+"/"+this.content+"/"+this.date)){
+                    this.$emit('addnote', {});
+                    this.onCancel()
+                }
+
+            },
+            onCancel: function() {
+                var params = {
+                    'animated': 'true'
+                };
+                navigator.pop(params, function (e) {
+                    //callback
+                });
+            }
+        },
+        created:function() {
+          var self = this;
+          var bundleUrl = self.$getConfig().bundleUrl;
+          self.id = self.getParameterByName('id', bundleUrl);
+          if (self.id.lastIndexOf('?') != -1) {
+              self.id = self.id.substr(0, self.id.lastIndexOf('?'));
+          }
+        }
+    }
+</script>

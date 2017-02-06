@@ -28,7 +28,7 @@
                     icon: "",
                     image: "http://chuantu.biz/t5/46/1485765293x3056209358.png",
                     selectedImage: "http://chuantu.biz/t5/46/1485765320x3056209358.png",
-                    src: "modules/read.js",
+                    src: "modules/notes.js",
                     visibility: "hidden"
                 },
                 {

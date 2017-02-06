@@ -21,7 +21,7 @@
         <cell class="list_item" repeat="item in newsList" newsid="{{item.id}}"
                 onclick="onNewsDetail" >
                 <read_item title="{{item.title}}"
-                image="{{item.images[0]}}"></read_item>s
+                image="{{item.images[0]}}"></read_item>
         </cell>
 
          <loading class="refresh-view" display="{{loading_display}}" onloading="onLoading">

@@ -9,7 +9,10 @@
                 <text class="nav_logo">TWO</text>
                 <text class="text-type">|{{title}}</text>
             </div>
-            <div style="flex:1;"></div>
+            <div style="flex:1">
+                <image style="width:50px;height:50px;margin-top: 30px; margin-left: 150px" if="{{note}}" onclick="onWriteNote"
+                       src="http://chuantu.biz/t5/46/1486360031x3673506812.png"></image>
+            </div>
         </div>
         <div class="separate-item-text"></div>
     </div>
@@ -56,6 +59,7 @@
             title: '阅读',
             justifyContent: 'center',
             showback: false,
+            note:false,
         },
         created: function () {
             var self = this;
@@ -63,7 +67,10 @@
         methods: {
             onBackClick: function (e) {
                 this.$dispatch('onbackclick', {});
-            }
+            },
+            onWriteNote: function() {
+                this.$dispatch('onwritenote', {});
+            },
         }
     }
 </script>

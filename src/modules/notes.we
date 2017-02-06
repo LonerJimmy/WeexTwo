@@ -1,0 +1,123 @@
+<template>
+    <div>
+        <nav_bar_normal title="笔记" note="true"></nav_bar_normal>
+        <list class="notes-list">
+            <cell class="list_item" repeat="item in titleList" index="{{$index}}" >
+                <note_item title="{{item}}"></note_item>
+            </cell>
+        </list>
+    </div>
+</template>
+
+<style>
+    notes-list{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list_item{
+            justify-content: center;
+            border-bottom-width: 1px;
+            border-bottom-color: #d4d4d4;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+</style>
+
+<script>
+    var storage = require('@weex-module/storage');
+    var navigator = require('@weex-module/navigator');
+    var apis = require('../common/api');
+
+    module.exports = {
+            data: {
+                notesList:[],
+                dateList:[],
+                titleList:[],
+                contentList:[],
+                baseURL:''
+            },
+            methods: {
+                getNotes:function() {
+                    var self=this;
+                    self.notesList=[];
+                    self.notesList=this.getAll();
+                    var divide=[];
+                    var items;
+                    if(self.notesList!= undefined && self.notesList.length>0){
+                        for (var i = 0; i < self.notesList.length; i++) {
+                            items = self.notesList[i];
+                            divide=items.split('/');
+                            self.dateList.push(divide[2]);
+                            self.titleList.push(divide[0]);
+                            self.contentList.push(divide[1]);
+                        }
+                    }
+                },
+
+                getAll: function() {
+                    storage.getAllKeys(e => {
+                        if (e.result == 'success' && e.data.length)
+                            return e.data;
+                        return [];
+                    });
+                },
+                getStorage: function(key) {
+                    storage.getItem(key, function (e) {
+                        if (e.result == 'success' && e.data != undefined) {
+                            return e.data;
+                        } else {
+                            return undefined;
+                        }
+                    });
+                },
+
+                removeStorage: function (key) {
+                    storage.removeItem(key, function (e) {
+                        if (e.result == 'success' || e.data == undefined) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    });
+                },
+
+                num: function () {
+                    storage.length(function (e) {
+                        if (e.result == 'success')
+                            return e.data;
+                        return 0;
+                    });
+                }
+            },
+            created:function() {
+                this.getNotes();
+                var self=this;
+                var base = apis.getBaseUrl(self.$getConfig().bundleUrl, true);
+                self.baseURL = base;
+
+                self.$on('addnote',function() {
+                  this.getNotes();
+                });
+
+                self.$on('onwritenote', function() {
+                    var params;
+                    if(self.notesList!= undefined && self.notesList.length>0){
+                        params = {
+                             'url': this.baseURL + 'modules/note_detail.js?id='+this.notesList.length,
+                             'animated': 'true'
+                        };
+                    }else{
+                        params = {
+                             'url': self.baseURL + 'modules/note_detail.js?id=0',
+                             'animated': 'true'
+                        };
+                    }
+                    navigator.push(params, function (e) {
+                    });
+                })
+            },
+        }
+</script>
