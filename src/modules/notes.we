@@ -2,8 +2,8 @@
     <div>
         <nav_bar_normal title="笔记" note="true"></nav_bar_normal>
         <list class="notes-list">
-            <cell class="list_item" repeat="item in titleList" index="{{$index}}" >
-                <note_item title="{{item}}"></note_item>
+            <cell class="list_item" repeat="item in titleList" noteid="{{$index}}" onlongpress="onDelete">
+                <note_item title="{{item}}" date="{{dateList[$index]}}"></note_item>
             </cell>
         </list>
     </div>
@@ -46,6 +46,14 @@
                     self.getAll();
                 },
 
+                onDelete:function(e) {
+                    storage.removeItem("WeexTwo"+e.target.attr.noteid, function (e) {
+                        if (e.result == 'success') {
+                            this.getNotes();
+                        }
+                    });
+                },
+
                 getAll: function() {
                     var self=this;
                     storage.getAllKeys(e => {
@@ -75,16 +83,6 @@
                             return e.data;
                         } else {
                             return undefined;
-                        }
-                    });
-                },
-
-                removeStorage: function (key) {
-                    storage.removeItem(key, function (e) {
-                        if (e.result == 'success' || e.data == undefined) {
-                            return true;
-                        } else {
-                            return false;
                         }
                     });
                 },

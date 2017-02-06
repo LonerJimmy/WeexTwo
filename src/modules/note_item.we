@@ -9,21 +9,21 @@
 
 <style>
     .item-content{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .title {
-        flex: 2;
+        flex: 3;
         color: black;
         font-size: 36px;
         margin-top: 10px;
         font-weight: bold;
-        /*width:700px;*/
     }
 
     .date {
         color: #7a7a7a;
         flex: 1;
+        margin-top: 10px;
     }
 
 </style>

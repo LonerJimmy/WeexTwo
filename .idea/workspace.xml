@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/note_detail.we" afterPath="$PROJECT_DIR$/src/modules/note_detail.we" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/note_item.we" afterPath="$PROJECT_DIR$/src/modules/note_item.we" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/notes.we" afterPath="$PROJECT_DIR$/src/modules/notes.we" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
@@ -27,14 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
-          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note_detail.we" pinned="false" current-in-tab="true">
+      <file leaf-file-name="note_detail.we" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/note_detail.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
@@ -48,15 +41,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notes.we" pinned="false" current-in-tab="false">
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="2548" column="28" lean-forward="false" selection-start-line="2548" selection-start-column="28" selection-end-line="2548" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/modules/news.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="2548" column="28" lean-forward="false" selection-start-line="2548" selection-start-column="28" selection-end-line="2548" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_item.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes.we" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/notes.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question-detail.we" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/question-detail.we">
+      <file leaf-file-name="note_item.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/note_item.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
@@ -76,15 +96,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.we" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/movie.we">
-          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movie-detail.we" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/movie-detail.we">
+      <file leaf-file-name="main.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/main.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
           </provider>
@@ -102,20 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>undefined</find>
-      <find>currentIndex</find>
-      <find>index</find>
-      <find>split</find>
-      <find>titleList</find>
-      <find>img</find>
-      <find>nav-bar-normal</find>
-      <find>newsList</find>
-      <find>this.$on</find>
-      <find>length</find>
-      <find>navigator</find>
-      <find>id</find>
-      <find>baseURL</find>
-      <find>apis</find>
       <find>titletext</find>
       <find>titlearea</find>
       <find>getNotes</find>
@@ -129,9 +128,23 @@
       <find>onCancel</find>
       <find>notesList</find>
       <find>success</find>
-      <find>getAll</find>
       <find>onTextChange</find>
+      <find>apis</find>
+      <find>$index</find>
+      <find>getReadingIndex</find>
+      <find>item</find>
+      <find>onclick</find>
       <find>dateList</find>
+      <find>onNewsDetail</find>
+      <find>getHomeData</find>
+      <find>anim</find>
+      <find>onMenuItemclick</find>
+      <find>index</find>
+      <find>onDelete</find>
+      <find>onSliderItemClick</find>
+      <find>imgid</find>
+      <find>noteid</find>
+      <find>getAll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +183,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/modules/movie-detail.we" />
         <option value="$PROJECT_DIR$/src/common/store.js" />
-        <option value="$PROJECT_DIR$/src/modules/note_item.we" />
         <option value="$PROJECT_DIR$/src/common/store.we" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/main.we" />
@@ -180,8 +192,10 @@
         <option value="$PROJECT_DIR$/src/modules/news.we" />
         <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
         <option value="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/notes.js" />
-        <option value="$PROJECT_DIR$/src/modules/notes.we" />
         <option value="$PROJECT_DIR$/src/modules/note_detail.we" />
+        <option value="$PROJECT_DIR$/src/modules/main.we" />
+        <option value="$PROJECT_DIR$/src/modules/note_item.we" />
+        <option value="$PROJECT_DIR$/src/modules/notes.we" />
       </list>
     </option>
   </component>
@@ -434,7 +448,7 @@
       <workItem from="1485737633563" duration="11000" />
       <workItem from="1485737663242" duration="14906000" />
       <workItem from="1485962931164" duration="62000" />
-      <workItem from="1485997964044" duration="21543000" />
+      <workItem from="1485997964044" duration="22925000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -534,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486377273736</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="日记功能添加">
+      <created>1486386489127</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1486386489127</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115658000" />
+    <option name="totallyTimeSpent" value="117040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -609,7 +630,8 @@
     <MESSAGE value="bug修改" />
     <MESSAGE value="tab修改" />
     <MESSAGE value="日记模块添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="日记模块添加" />
+    <MESSAGE value="日记功能添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="日记功能添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,8 +640,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/essay-detail.we" />
-    <entry file="file://$PROJECT_DIR$/modules/carouse-item.we" />
     <entry file="file://$PROJECT_DIR$/modules/carouse-list.we" />
     <entry file="file://$PROJECT_DIR$/modules/question-detail.we" />
     <entry file="file://$PROJECT_DIR$/modules/movie-video.we" />
@@ -732,11 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/main.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/movie.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
@@ -765,26 +780,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/note_item.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/question-detail.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
@@ -803,12 +798,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/notes.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/note_detail.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/note_detail.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read_item.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/main.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/modules/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="2548" column="28" lean-forward="false" selection-start-line="2548" selection-start-column="28" selection-end-line="2548" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="2548" column="28" lean-forward="false" selection-start-line="2548" selection-start-column="28" selection-end-line="2548" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/note_item.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/notes.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
