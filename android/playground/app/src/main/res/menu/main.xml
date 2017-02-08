@@ -11,4 +11,9 @@
             android:icon="@drawable/ic_action_refresh"
             app:showAsAction="ifRoom"
             android:id="@+id/action_refresh"/>
+    <item
+        android:title="debug"
+        android:icon="@drawable/debug"
+        app:showAsAction="ifRoom"
+        android:id="@+id/action_debug"/>
 </menu>

@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,10 +27,6 @@ import com.taobao.weex.utils.WXSoInstallMgrSdk;
 
 public class IndexActivity extends AbsWeexActivity {
 
-    private static final String TAG = "IndexActivity";
-    private static final String DEFAULT_IP = "10.12.65.127";
-    private static String sCurrentIp = DEFAULT_IP;//"127.0.0.1"; // your_current_IP
-
     private ProgressBar mProgressBar;
     private TextView mTipView;
 
@@ -46,6 +43,7 @@ public class IndexActivity extends AbsWeexActivity {
         mProgressBar.setVisibility(View.VISIBLE);
         mTipView.setVisibility(View.VISIBLE);
 
+        AppConfig.setLaunchUrl("10.12.65.120");
 
         if (!WXSoInstallMgrSdk.isCPUSupport()) {
             mProgressBar.setVisibility(View.INVISIBLE);
@@ -53,24 +51,23 @@ public class IndexActivity extends AbsWeexActivity {
             return;
         }
 
-        loadUrl(isLocalPage() ? AppConfig.getLocalUrl() : AppConfig.getLaunchUrl());
+        String url = AppConfig.getLaunchUrl();
+        Log.e("loner", "url is " + url);
+        createWeexInstance();
+        renderPage();
     }
 
     @Override
     protected boolean isLocalPage() {
-        return TextUtils.equals(sCurrentIp, DEFAULT_IP);
+        return AppConfig.isLaunchLocally();
 //        return AppConfig.isLaunchLocally();
     }
 
     @Override
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(isLocalPage() ? R.menu.main_scan : R.menu.main, menu);
+        getMenuInflater().inflate(isLocalPage() ? R.menu.main : R.menu.main_scan, menu);
         return super.onCreateOptionsMenu(menu);
-    }
-
-    protected void preRenderPage() {
-        mProgressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -90,6 +87,9 @@ public class IndexActivity extends AbsWeexActivity {
                 integrator.setBarcodeImageEnabled(true);
                 integrator.initiateScan();
                 //scanQrCode();
+                break;
+            case R.id.action_debug:
+
                 break;
             default:
                 break;
