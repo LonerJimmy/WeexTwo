@@ -228,6 +228,7 @@ import com.alibaba.weex.https.WXHttpManager;
 import com.alibaba.weex.https.WXHttpTask;
 import com.alibaba.weex.https.WXRequestListener;
 import com.taobao.weex.IWXRenderListener;
+import com.taobao.weex.WXEnvironment;
 import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.IWXDebugProxy;
@@ -304,6 +305,12 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
 
     protected String getPageName() {
         return TAG;
+    }
+
+    protected void initDebugEnvironment(boolean enable, String host) {
+        WXEnvironment.sRemoteDebugMode = enable;
+        WXEnvironment.sRemoteDebugProxyUrl = "ws://" + host + ":8088/debugProxy/native";
+        WXSDKEngine.reload();
     }
 
     @Override

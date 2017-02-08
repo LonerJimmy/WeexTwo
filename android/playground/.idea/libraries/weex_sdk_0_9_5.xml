@@ -2,7 +2,6 @@
   <library name="weex_sdk-0.9.5">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.9.5/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../appframework/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.9.5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.9.5/res" />
@@ -10,7 +9,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.taobao.android/weex_sdk/0.9.5/2bf8a05bf2f29e14dac9ccec13eabbaac01b9528/weex_sdk-0.9.5-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.taobao.android/weex_sdk/0.9.5/2bf8a05bf2f29e14dac9ccec13eabbaac01b9528/weex_sdk-0.9.5-sources.jar!/" />
     </SOURCES>
   </library>
