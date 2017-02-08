@@ -9,17 +9,21 @@
 npm install
 ```
 
-装好node_modules之后，就可以使用项目中的脚本weextwo了，先将we文件转换为js，命令如下：
+装好node_modules之后，第一次命令如下：
 ``` java
-./weextwo
+npm run build
 ```
-
-然后将生成的js文件放到android项目中，命令如下：
+然后用studio打开playground代码，把IndexActivity.java中的代码
 ``` java
-./weextwo android
+AppConfig.setLaunchUrl("10.12.65.120");
 ```
+中的url修改成你pc的ip就可以了，然后运行app。
 
-这行命令会将生产的js文件放到android项目中的assets/dist中，最后你就可以使用android studio打开项目中android/playground直接把app编译运行起来。
+启动watch服务以及debug服务命令如下：
+``` java
+npm run dev
+```
+这样调试起来就非常方便，你在pc上直接修改代码，刷新一下app右上角的刷新按钮，就可以立即看到效果。
 
 # 运行结果
 
