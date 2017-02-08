@@ -73,6 +73,8 @@
 	    {
 	      "type": "wxc-tabbar",
 	      "attr": {
+	        "selectedColor": "0xffffff",
+	        "unselectedColor": "0x999999",
 	        "tabItems": function () {return this.tabItems}
 	      }
 	    }
@@ -92,30 +94,30 @@
 	    data: function () {return {
 	        tabItems: [{
 	            index: 0,
-	            title: "看看",
+	            title: "新闻",
 	            titleColor: 0x0,
 	            icon: "",
-	            image: "http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png",
-	            selectedImage: "http://gtms04.alicdn.com/tps/i4/TB16jjPMpXXXXazXVXX9t7RGVXX-46-46.png",
+	            image: "http://chuantu.biz/t5/46/1485765358x3056209358.png",
+	            selectedImage: "http://chuantu.biz/t5/46/1485765394x3056209358.png",
 	            src: "modules/news.js",
 	            visibility: "visible"
 	        }, {
 	            index: 1,
-	            title: "阅读",
+	            title: "日记",
 	            titleColor: 0x0,
 	            icon: "",
-	            image: "http://gtms03.alicdn.com/tps/i3/TB1LEn9MpXXXXaUXpXX9t7RGVXX-46-46.png",
-	            selectedImage: "http://gtms02.alicdn.com/tps/i2/TB1qysbMpXXXXcnXXXX9t7RGVXX-46-46.png",
-	            src: "modules/read.js",
+	            image: "http://chuantu.biz/t5/46/1485765293x3056209358.png",
+	            selectedImage: "http://chuantu.biz/t5/46/1485765320x3056209358.png",
+	            src: "modules/notes.js",
 	            visibility: "hidden"
 	        }, {
 	            index: 2,
-	            title: "电影",
+	            title: "个人",
 	            titleColor: 0x0,
 	            icon: "",
-	            image: "http://gtms01.alicdn.com/tps/i1/TB1B0v5MpXXXXcvXpXX9t7RGVXX-46-46.png",
-	            selectedImage: "http://gtms04.alicdn.com/tps/i4/TB1NxY5MpXXXXcrXpXX9t7RGVXX-46-46.png",
-	            src: "modules/movie.js",
+	            image: "http://chuantu.biz/t5/46/1485765245x3056209358.png",
+	            selectedImage: "http://chuantu.biz/t5/46/1485765043x3056209358.png",
+	            src: "",
 	            visibility: "hidden"
 	        }]
 	    }},
@@ -2124,8 +2126,8 @@
 	    movieList: '/movie/list/',
 	    movieDetail: '/movie/detail/',
 	    API_NEWS_URL: 'http://news-at.zhihu.com/api/4/news/latest',
-	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/'
-
+	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/',
+	    API_NEWS_MORE:'http://news-at.zhihu.com/api/4/news/before/'
 	};
 	function getData(url, callback) {
 	    stream.sendHttp({
@@ -2136,6 +2138,7 @@
 	        callback(retdata);
 	    });
 	}
+
 	exports.getHome = function (dateStr, callback) {
 	    getData(apiURL.baseurl + apiURL.homePage + dateStr, callback);
 	};
@@ -2165,6 +2168,9 @@
 	    getData(apiURL.baseurl + apiURL.movieDetail + id, callback);
 
 	};
+	exports.getMoreNewsList=function (date,callback) {
+	    getData(apiURL.API_NEWS_MORE + date,callback);
+	}
 	exports.getNewsList = function (callback) {
 	    getData(apiURL.API_NEWS_URL, callback);
 	}

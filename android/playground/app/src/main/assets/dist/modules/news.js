@@ -44,10 +44,11 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(113)
-	var __weex_template__ = __webpack_require__(117)
-	var __weex_style__ = __webpack_require__(118)
-	var __weex_script__ = __webpack_require__(119)
+	__webpack_require__(116)
+	__webpack_require__(117)
+	var __weex_template__ = __webpack_require__(121)
+	var __weex_style__ = __webpack_require__(122)
+	var __weex_script__ = __webpack_require__(123)
 
 	__weex_define__('@weex-component/013ec6613e51230f6cc8c8d8e5daa19f', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
@@ -2055,8 +2056,8 @@
 	    movieList: '/movie/list/',
 	    movieDetail: '/movie/detail/',
 	    API_NEWS_URL: 'http://news-at.zhihu.com/api/4/news/latest',
-	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/'
-
+	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/',
+	    API_NEWS_MORE:'http://news-at.zhihu.com/api/4/news/before/'
 	};
 	function getData(url, callback) {
 	    stream.sendHttp({
@@ -2067,6 +2068,7 @@
 	        callback(retdata);
 	    });
 	}
+
 	exports.getHome = function (dateStr, callback) {
 	    getData(apiURL.baseurl + apiURL.homePage + dateStr, callback);
 	};
@@ -2096,6 +2098,9 @@
 	    getData(apiURL.baseurl + apiURL.movieDetail + id, callback);
 
 	};
+	exports.getMoreNewsList=function (date,callback) {
+	    getData(apiURL.API_NEWS_MORE + date,callback);
+	}
 	exports.getNewsList = function (callback) {
 	    getData(apiURL.API_NEWS_URL, callback);
 	}
@@ -2162,11 +2167,192 @@
 /* 111 */,
 /* 112 */,
 /* 113 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "children": [
+	    {
+	      "type": "div",
+	      "classList": [
+	        "nav_bar"
+	      ],
+	      "children": [
+	        {
+	          "type": "div",
+	          "style": {
+	            "flex": 1
+	          },
+	          "children": [
+	            {
+	              "type": "image",
+	              "style": {
+	                "width": 99,
+	                "height": 99
+	              },
+	              "shown": function () {return this.showback},
+	              "events": {
+	                "click": "onBackClick"
+	              },
+	              "attr": {
+	                "src": "https://github.com/dodola/WeexOne/raw/master/imgs/return_image.png"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "nav_title"
+	          ],
+	          "children": [
+	            {
+	              "type": "text",
+	              "classList": [
+	                "nav_logo"
+	              ],
+	              "attr": {
+	                "value": "TWO"
+	              }
+	            },
+	            {
+	              "type": "text",
+	              "classList": [
+	                "text-type"
+	              ],
+	              "attr": {
+	                "value": function () {return '|' + (this.title)}
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "style": {
+	            "flex": 1
+	          },
+	          "children": [
+	            {
+	              "type": "image",
+	              "style": {
+	                "width": 50,
+	                "height": 50,
+	                "marginTop": 30,
+	                "marginLeft": 150
+	              },
+	              "shown": function () {return this.note},
+	              "events": {
+	                "click": "onWriteNote"
+	              },
+	              "attr": {
+	                "src": "http://chuantu.biz/t5/46/1486360031x3673506812.png"
+	              }
+	            }
+	          ]
+	        }
+	      ]
+	    },
+	    {
+	      "type": "div",
+	      "classList": [
+	        "separate-item-text"
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+/* 114 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "text-type": {
+	    "color": "#29a7e2",
+	    "marginLeft": 3,
+	    "marginTop": 10
+	  },
+	  "nav_bar": {
+	    "flexDirection": "row",
+	    "marginBottom": 10,
+	    "height": 99
+	  },
+	  "nav_logo": {
+	    "width": 80,
+	    "height": 40,
+	    "color": "#c0c0c0",
+	    "fontSize": 35
+	  },
+	  "nav_title": {
+	    "flex": 1,
+	    "justifyContent": "center",
+	    "alignItems": "center",
+	    "flexDirection": "row"
+	  },
+	  "separate-item-text": {
+	    "height": 1,
+	    "backgroundColor": "#d4d4d4"
+	  }
+	}
+
+/***/ },
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __weex_template__ = __webpack_require__(114)
-	var __weex_style__ = __webpack_require__(115)
-	var __weex_script__ = __webpack_require__(116)
+	module.exports = function(module, exports, __weex_require__){'use strict';
+
+	__webpack_require__(3);
+	var modal = __weex_require__('@weex-module/modal');
+	module.exports = {
+	    data: function () {return {
+	        title: '阅读',
+	        justifyContent: 'center',
+	        showback: false,
+	        note: false
+	    }},
+	    created: function created() {
+	        var self = this;
+	    },
+	    methods: {
+	        onBackClick: function onBackClick(e) {
+	            this.$dispatch('onbackclick', {});
+	        },
+	        onWriteNote: function onWriteNote() {
+	            this.$dispatch('onwritenote', {});
+	        }
+	    }
+	};}
+	/* generated by weex-loader */
+
+
+/***/ },
+/* 116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __weex_template__ = __webpack_require__(113)
+	var __weex_style__ = __webpack_require__(114)
+	var __weex_script__ = __webpack_require__(115)
+
+	__weex_define__('@weex-component/nav_bar_normal', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+
+	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
+	    if (__weex_exports__.__esModule && __weex_exports__.default) {
+	      __weex_module__.exports = __weex_exports__.default
+	    }
+
+	    __weex_module__.exports.template = __weex_template__
+
+	    __weex_module__.exports.style = __weex_style__
+
+	})
+
+
+/***/ },
+/* 117 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __weex_template__ = __webpack_require__(118)
+	var __weex_style__ = __webpack_require__(119)
+	var __weex_script__ = __webpack_require__(120)
 
 	__weex_define__('@weex-component/read_item', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
@@ -2183,7 +2369,7 @@
 
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -2231,7 +2417,7 @@
 	}
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -2263,7 +2449,7 @@
 	}
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, __weex_require__){'use strict';
@@ -2277,66 +2463,162 @@
 
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "list",
-	  "classList": [
-	    "news-list"
-	  ],
+	  "type": "div",
 	  "children": [
 	    {
-	      "type": "refresh",
-	      "classList": [
-	        "refresh_view"
-	      ],
+	      "type": "nav_bar_normal",
 	      "attr": {
-	        "display": function () {return this.refresh_display}
-	      },
-	      "events": {
-	        "refresh": "onRefresh"
-	      },
-	      "children": [
-	        {
-	          "type": "text",
-	          "classList": [
-	            "refresh-arrow"
-	          ],
-	          "shown": function () {return (this.refresh_display==='hide')},
-	          "attr": {
-	            "value": "刷新中..."
-	          }
-	        },
-	        {
-	          "type": "loading-indicator"
-	        }
-	      ]
+	        "title": "新闻"
+	      }
 	    },
 	    {
-	      "type": "cell",
-	      "append": "tree",
+	      "type": "list",
 	      "classList": [
-	        "list_item"
+	        "news-list"
 	      ],
-	      "repeat": {
-	        "expression": function () {return this.newsList},
-	        "value": "item"
-	      },
-	      "attr": {
-	        "newsid": function () {return this.item.id}
-	      },
-	      "events": {
-	        "click": "onNewsDetail"
-	      },
 	      "children": [
 	        {
-	          "type": "read_item",
+	          "type": "refresh",
+	          "classList": [
+	            "refresh_view"
+	          ],
 	          "attr": {
-	            "title": function () {return this.item.title},
-	            "date": function () {return this.date},
-	            "image": function () {return this.item.images[0]}
-	          }
+	            "display": function () {return this.refresh_display}
+	          },
+	          "events": {
+	            "refresh": "onRefresh"
+	          },
+	          "children": [
+	            {
+	              "type": "text",
+	              "classList": [
+	                "refresh-arrow"
+	              ],
+	              "shown": function () {return (this.refresh_display==='hide')},
+	              "attr": {
+	                "value": "刷新中..."
+	              }
+	            },
+	            {
+	              "type": "loading-indicator"
+	            }
+	          ]
+	        },
+	        {
+	          "type": "cell",
+	          "append": "tree",
+	          "classList": [
+	            "top-slider"
+	          ],
+	          "children": [
+	            {
+	              "type": "slider",
+	              "classList": [
+	                "top-slider"
+	              ],
+	              "append": "tree",
+	              "attr": {
+	                "autoPlay": "true",
+	                "interval": "5000"
+	              },
+	              "children": [
+	                {
+	                  "type": "indicator",
+	                  "classList": [
+	                    "indicator"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "repeat": {
+	                    "expression": function () {return this.imageList},
+	                    "value": "img"
+	                  },
+	                  "children": [
+	                    {
+	                      "type": "image",
+	                      "classList": [
+	                        "slider-item"
+	                      ],
+	                      "attr": {
+	                        "src": function () {return this.img.image},
+	                        "imgid": function () {return this.img.id}
+	                      },
+	                      "events": {
+	                        "click": "onSliderItemClick"
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "title"
+	                      ],
+	                      "attr": {
+	                        "value": function () {return this.img.title}
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "cell",
+	          "append": "tree",
+	          "classList": [
+	            "list_item"
+	          ],
+	          "repeat": {
+	            "expression": function () {return this.newsList},
+	            "value": "item"
+	          },
+	          "attr": {
+	            "newsid": function () {return this.item.id}
+	          },
+	          "events": {
+	            "click": "onNewsDetail"
+	          },
+	          "children": [
+	            {
+	              "type": "read_item",
+	              "attr": {
+	                "title": function () {return this.item.title},
+	                "image": function () {return this.item.images[0]}
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "loading",
+	          "classList": [
+	            "refresh-view"
+	          ],
+	          "attr": {
+	            "display": function () {return this.loading_display}
+	          },
+	          "events": {
+	            "loading": "onLoading"
+	          },
+	          "children": [
+	            {
+	              "type": "text",
+	              "classList": [
+	                "refresh-arrow"
+	              ],
+	              "shown": function () {return (this.refresh_display==='hide')},
+	              "attr": {
+	                "value": "加载更多"
+	              }
+	            },
+	            {
+	              "type": "loading-indicator"
+	            }
+	          ]
 	        }
 	      ]
 	    }
@@ -2344,10 +2626,47 @@
 	}
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports) {
 
 	module.exports = {
+	  "top-slider": {
+	    "flexDirection": "row",
+	    "height": 500,
+	    "width": 750
+	  },
+	  "title": {
+	    "position": "absolute",
+	    "bottom": 42,
+	    "left": 20,
+	    "width": 500,
+	    "color": "#FFFFFF",
+	    "fontSize": 28
+	  },
+	  "slider-item": {
+	    "height": 500,
+	    "width": 750
+	  },
+	  "indicator": {
+	    "position": "absolute",
+	    "width": 690,
+	    "height": 400,
+	    "top": 240,
+	    "left": 240,
+	    "itemColor": "#dddddd",
+	    "itemSelectedColor": "#45b5f0",
+	    "itemSize": 15
+	  },
+	  "refresh-view": {
+	    "height": 80,
+	    "width": 750,
+	    "justifyContent": "center",
+	    "alignItems": "center"
+	  },
+	  "refresh-arrow": {
+	    "fontSize": 30,
+	    "color": "#45b5f0"
+	  },
 	  "news-list": {
 	    "marginLeft": 20,
 	    "marginRight": 20
@@ -2370,7 +2689,7 @@
 	}
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, __weex_require__){'use strict';
@@ -2383,8 +2702,10 @@
 	    data: function () {return {
 	        refresh_display: 'hide',
 	        newsList: [],
-	        date: "",
-	        baseURL: ''
+	        imageList: [],
+	        baseURL: '',
+	        loading_display: 'hide',
+	        currentIndex: 0
 	    }},
 	    methods: {
 	        onRefresh: function onRefresh(e) {
@@ -2395,16 +2716,44 @@
 	        },
 	        getNewsData: function getNewsData() {
 	            var self = this;
+	            self.newsList = [];
 	            apis.getNewsList(function (ret) {
-	                self.date = ret.date;
+	                self.currentIndex = ret.date;
+	                for (var i = 0; i < ret.stories.length; i++) {
+	                    var items = ret.stories[i];
+	                    self.newsList.push(items);
+	                }
+	                self.imageList = ret.top_stories;
+	            });
+	        },
+	        onNewsDetail: function onNewsDetail(e) {
+	            var itemid = e.target.attr.newsid;
+	            var params = {
+	                'url': this.baseURL + 'modules/news_detail.js?id=' + itemid,
+	                'animated': 'true'
+	            };
+	            navigator.push(params, function (e) {});
+	        },
+	        onLoading: function onLoading(e) {
+	            var self = this;
+	            this.loading_display = "show";
+	            self.refresh_display = 'show';
+
+	            self.getMoreNews(--self.currentIndex);
+	            self.loading_display = "hide";
+	            self.refresh_display = 'hide';
+	        },
+	        getMoreNews: function getMoreNews(index) {
+	            var self = this;
+	            apis.getMoreNewsList(index, function (ret) {
 	                for (var i = 0; i < ret.stories.length; i++) {
 	                    var items = ret.stories[i];
 	                    self.newsList.push(items);
 	                }
 	            });
 	        },
-	        onNewsDetail: function onNewsDetail(e) {
-	            var itemid = e.target.attr.newsid;
+	        onSliderItemClick: function onSliderItemClick(e) {
+	            var itemid = e.target.attr.imgid;
 	            var params = {
 	                'url': this.baseURL + 'modules/news_detail.js?id=' + itemid,
 	                'animated': 'true'

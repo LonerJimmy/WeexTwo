@@ -45,9 +45,9 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(93)
-	var __weex_template__ = __webpack_require__(123)
-	var __weex_style__ = __webpack_require__(124)
-	var __weex_script__ = __webpack_require__(125)
+	var __weex_template__ = __webpack_require__(137)
+	var __weex_style__ = __webpack_require__(138)
+	var __weex_script__ = __webpack_require__(139)
 
 	__weex_define__('@weex-component/228a2e53ab1dd9b2ce28d9b2af63d2f7', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
@@ -2055,8 +2055,8 @@
 	    movieList: '/movie/list/',
 	    movieDetail: '/movie/detail/',
 	    API_NEWS_URL: 'http://news-at.zhihu.com/api/4/news/latest',
-	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/'
-
+	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/',
+	    API_NEWS_MORE:'http://news-at.zhihu.com/api/4/news/before/'
 	};
 	function getData(url, callback) {
 	    stream.sendHttp({
@@ -2067,6 +2067,7 @@
 	        callback(retdata);
 	    });
 	}
+
 	exports.getHome = function (dateStr, callback) {
 	    getData(apiURL.baseurl + apiURL.homePage + dateStr, callback);
 	};
@@ -2096,6 +2097,9 @@
 	    getData(apiURL.baseurl + apiURL.movieDetail + id, callback);
 
 	};
+	exports.getMoreNewsList=function (date,callback) {
+	    getData(apiURL.API_NEWS_MORE + date,callback);
+	}
 	exports.getNewsList = function (callback) {
 	    getData(apiURL.API_NEWS_URL, callback);
 	}
@@ -2324,7 +2328,21 @@
 /* 120 */,
 /* 121 */,
 /* 122 */,
-/* 123 */
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -2398,7 +2416,7 @@
 	}
 
 /***/ },
-/* 124 */
+/* 138 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -2426,7 +2444,7 @@
 	}
 
 /***/ },
-/* 125 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, __weex_require__){'use strict';

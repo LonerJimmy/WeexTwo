@@ -44,9 +44,10 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __weex_template__ = __webpack_require__(120)
-	var __weex_style__ = __webpack_require__(121)
-	var __weex_script__ = __webpack_require__(122)
+	__webpack_require__(116)
+	var __weex_template__ = __webpack_require__(124)
+	var __weex_style__ = __webpack_require__(125)
+	var __weex_script__ = __webpack_require__(126)
 
 	__weex_define__('@weex-component/2348564ee4849e86bcca314a0c9a86e8', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
@@ -2054,8 +2055,8 @@
 	    movieList: '/movie/list/',
 	    movieDetail: '/movie/detail/',
 	    API_NEWS_URL: 'http://news-at.zhihu.com/api/4/news/latest',
-	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/'
-
+	    API_NEWS_DETAIL: 'http://news.at.zhihu.com/api/4/news/',
+	    API_NEWS_MORE:'http://news-at.zhihu.com/api/4/news/before/'
 	};
 	function getData(url, callback) {
 	    stream.sendHttp({
@@ -2066,6 +2067,7 @@
 	        callback(retdata);
 	    });
 	}
+
 	exports.getHome = function (dateStr, callback) {
 	    getData(apiURL.baseurl + apiURL.homePage + dateStr, callback);
 	};
@@ -2095,6 +2097,9 @@
 	    getData(apiURL.baseurl + apiURL.movieDetail + id, callback);
 
 	};
+	exports.getMoreNewsList=function (date,callback) {
+	    getData(apiURL.API_NEWS_MORE + date,callback);
+	}
 	exports.getNewsList = function (callback) {
 	    getData(apiURL.API_NEWS_URL, callback);
 	}
@@ -2160,97 +2165,248 @@
 /* 110 */,
 /* 111 */,
 /* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */
+/* 113 */
 /***/ function(module, exports) {
 
 	module.exports = {
 	  "type": "div",
 	  "children": [
 	    {
-	      "type": "scroller",
+	      "type": "div",
 	      "classList": [
-	        "scroll"
+	        "nav_bar"
 	      ],
 	      "children": [
 	        {
 	          "type": "div",
+	          "style": {
+	            "flex": 1
+	          },
+	          "children": [
+	            {
+	              "type": "image",
+	              "style": {
+	                "width": 99,
+	                "height": 99
+	              },
+	              "shown": function () {return this.showback},
+	              "events": {
+	                "click": "onBackClick"
+	              },
+	              "attr": {
+	                "src": "https://github.com/dodola/WeexOne/raw/master/imgs/return_image.png"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
 	          "classList": [
-	            "scroll-content"
+	            "nav_title"
 	          ],
 	          "children": [
 	            {
 	              "type": "text",
 	              "classList": [
-	                "text-title"
+	                "nav_logo"
 	              ],
 	              "attr": {
-	                "value": function () {return this.news_title}
+	                "value": "TWO"
 	              }
 	            },
 	            {
 	              "type": "text",
 	              "classList": [
-	                "text-content"
+	                "text-type"
 	              ],
 	              "attr": {
-	                "value": function () {return this.news_content}
+	                "value": function () {return '|' + (this.title)}
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "style": {
+	            "flex": 1
+	          },
+	          "children": [
+	            {
+	              "type": "image",
+	              "style": {
+	                "width": 50,
+	                "height": 50,
+	                "marginTop": 30,
+	                "marginLeft": 150
+	              },
+	              "shown": function () {return this.note},
+	              "events": {
+	                "click": "onWriteNote"
+	              },
+	              "attr": {
+	                "src": "http://chuantu.biz/t5/46/1486360031x3673506812.png"
 	              }
 	            }
 	          ]
 	        }
+	      ]
+	    },
+	    {
+	      "type": "div",
+	      "classList": [
+	        "separate-item-text"
 	      ]
 	    }
 	  ]
 	}
 
 /***/ },
-/* 121 */
+/* 114 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "scroll": {},
-	  "scroll-content": {
-	    "paddingLeft": 30,
-	    "paddingRight": 30
+	  "text-type": {
+	    "color": "#29a7e2",
+	    "marginLeft": 3,
+	    "marginTop": 10
 	  },
-	  "separate-line": {
-	    "backgroundColor": "#d4d4d4",
+	  "nav_bar": {
+	    "flexDirection": "row",
+	    "marginBottom": 10,
+	    "height": 99
+	  },
+	  "nav_logo": {
+	    "width": 80,
+	    "height": 40,
+	    "color": "#c0c0c0",
+	    "fontSize": 35
+	  },
+	  "nav_title": {
+	    "flex": 1,
+	    "justifyContent": "center",
+	    "alignItems": "center",
+	    "flexDirection": "row"
+	  },
+	  "separate-item-text": {
 	    "height": 1,
-	    "marginTop": 30,
-	    "marginBottom": 20
-	  },
-	  "text-title": {
-	    "color": "#000000",
-	    "fontSize": 40,
-	    "marginTop": 26,
-	    "fontWeight": "bold"
-	  },
-	  "text-content": {
-	    "color": "#333333",
-	    "marginTop": 28
+	    "backgroundColor": "#d4d4d4"
 	  }
 	}
 
 /***/ },
-/* 122 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, __weex_require__){'use strict';
 
 	__webpack_require__(3);
+	var modal = __weex_require__('@weex-module/modal');
+	module.exports = {
+	    data: function () {return {
+	        title: '阅读',
+	        justifyContent: 'center',
+	        showback: false,
+	        note: false
+	    }},
+	    created: function created() {
+	        var self = this;
+	    },
+	    methods: {
+	        onBackClick: function onBackClick(e) {
+	            this.$dispatch('onbackclick', {});
+	        },
+	        onWriteNote: function onWriteNote() {
+	            this.$dispatch('onwritenote', {});
+	        }
+	    }
+	};}
+	/* generated by weex-loader */
+
+
+/***/ },
+/* 116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __weex_template__ = __webpack_require__(113)
+	var __weex_style__ = __webpack_require__(114)
+	var __weex_script__ = __webpack_require__(115)
+
+	__weex_define__('@weex-component/nav_bar_normal', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+
+	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
+	    if (__weex_exports__.__esModule && __weex_exports__.default) {
+	      __weex_module__.exports = __weex_exports__.default
+	    }
+
+	    __weex_module__.exports.template = __weex_template__
+
+	    __weex_module__.exports.style = __weex_style__
+
+	})
+
+
+/***/ },
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "classList": [
+	    "wrapper"
+	  ],
+	  "children": [
+	    {
+	      "type": "nav_bar_normal",
+	      "attr": {
+	        "title": "新闻"
+	      }
+	    },
+	    {
+	      "type": "web",
+	      "attr": {
+	        "ref": "webview",
+	        "src": function () {return this.news_url}
+	      },
+	      "classList": [
+	        "webview"
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+/* 125 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "webview": {
+	    "width": 750,
+	    "height": 1050,
+	    "borderWidth": 2,
+	    "borderStyle": "solid",
+	    "borderColor": "#41B883"
+	  }
+	}
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, __weex_require__){'use strict';
+
+	__webpack_require__(3);
+	var webview = __weex_require__('@weex-module/webview');
 	var apis = __webpack_require__(85);
 	module.exports = {
 	    data: function () {return {
-	        news_content: '',
-	        news_title: '',
-	        new_image: ''
+	        news_url: ''
 	    }},
 	    created: function created() {
 	        var self = this;
@@ -2261,9 +2417,8 @@
 	        }
 
 	        apis.getNewsDetail(contentId, function (ret) {
-	            self.news_content = ret.body;
+	            self.news_url = ret.share_url;
 	            self.news_title = ret.title;
-	            self.news_image = ret.image;
 	        });
 	    },
 	    methods: {
