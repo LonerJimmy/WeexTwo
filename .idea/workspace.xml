@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
+    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="hot reload">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexBaseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexDebugActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_dynamic.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/content_dynamic.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-item.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav-bar-normal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav-bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/libraries/rules_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/libraries/runner_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/misc.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/MainActivity.java" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
     <list id="c5a9e037-0dd6-4891-bd87-1bdf9a73a1f5" name="Failed commit: Default (2)" comment="top new view added" />
@@ -29,8 +56,18 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -40,6 +77,51 @@
         <entry file="file://$PROJECT_DIR$/src/main.we">
           <provider selected="true" editor-type-id="WeexFxPreviewEditor">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav-bar-normal.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav_bar_normal.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_detail.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.we" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+          <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/ImageAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -65,9 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getNotes</find>
-      <find>onWriteNote</find>
-      <find>onwritenote</find>
       <find>onSave</find>
       <find>title</find>
       <find>onTextAreaChange</find>
@@ -95,6 +174,9 @@
       <find>getAll</find>
       <find>pack</find>
       <find>npm</find>
+      <find>port</find>
+      <find>webpack</find>
+      <find>8082</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,7 +207,6 @@
         <option value="$PROJECT_DIR$/modules/read.we" />
         <option value="$PROJECT_DIR$/common/api.js" />
         <option value="$PROJECT_DIR$/src/modules/carouse-list.we" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/weexone" />
         <option value="$PROJECT_DIR$/weextwo" />
@@ -135,8 +216,6 @@
         <option value="$PROJECT_DIR$/src/common/store.js" />
         <option value="$PROJECT_DIR$/src/common/store.we" />
         <option value="$PROJECT_DIR$/src/common/api.js" />
-        <option value="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
-        <option value="$PROJECT_DIR$/src/modules/read.we" />
         <option value="$PROJECT_DIR$/src/modules/news_detail.we" />
         <option value="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/notes.js" />
         <option value="$PROJECT_DIR$/src/modules/note_detail.we" />
@@ -144,8 +223,11 @@
         <option value="$PROJECT_DIR$/src/modules/note_item.we" />
         <option value="$PROJECT_DIR$/src/modules/notes.we" />
         <option value="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" />
-        <option value="$PROJECT_DIR$/src/modules/news.we" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/modules/read.we" />
+        <option value="$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
+        <option value="$PROJECT_DIR$/src/modules/news.we" />
         <option value="$PROJECT_DIR$/src/main.we" />
       </list>
     </option>
@@ -164,8 +246,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,6 +321,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeexTwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -268,9 +383,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="note&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/notes.we&#10;index&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/index.html&#10;news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news.we&#10;movie&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/movie-detail.we&#10;newsd&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news_detail.we&#10;api&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/common/api.js" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/common/api.js&#10;note&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/notes.we&#10;index&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/index.html&#10;news&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news.we&#10;movie&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/movie-detail.we&#10;newsd&#9;FILE&#9;file:///Users/loner/Documents/weex/WeexTwo/src/modules/news_detail.we" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -402,6 +516,11 @@
       <workItem from="1486547828658" duration="479000" />
       <workItem from="1486548410417" duration="3024000" />
       <workItem from="1486565504893" duration="1120000" />
+      <workItem from="1486567575062" duration="134000" />
+      <workItem from="1486619805777" duration="976000" />
+      <workItem from="1486700826923" duration="4474000" />
+      <workItem from="1486875190126" duration="4378000" />
+      <workItem from="1486963605165" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -540,19 +659,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134189000" />
+    <option name="totallyTimeSpent" value="146866000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2838336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22064245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Weex Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33231708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Weex Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33144155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31678832" sideWeight="0.50292397" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28455284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28376845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29166666" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42607683" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -578,7 +706,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.443539" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4431818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -624,12 +752,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/movie-video.we" />
-    <entry file="file://$PROJECT_DIR$/modules/nav-bar.we" />
-    <entry file="file://$PROJECT_DIR$/modules/serial-detail.we" />
-    <entry file="file://$PROJECT_DIR$/modules/read-item.we" />
-    <entry file="file://$PROJECT_DIR$/modules/nav-bar-normal.we" />
-    <entry file="file://$PROJECT_DIR$/modules/movie-detail.we" />
     <entry file="file://$PROJECT_DIR$/modules/movie.we" />
     <entry file="file://$PROJECT_DIR$/modules/read.we" />
     <entry file="file://$PROJECT_DIR$/common/api.js" />
@@ -648,30 +770,82 @@
     <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav_bar_normal.js" />
     <entry file="file://$PROJECT_DIR$/src/modules/essay-detail.we" />
     <entry file="file://$PROJECT_DIR$/node_modules/weex-components/src/wxc-tabbar.we" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/src/modules/carouse-list.we" />
     <entry file="file://$PROJECT_DIR$/src/common/store.js" />
     <entry file="file://$PROJECT_DIR$/src/common/store.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/movie-detail.we" />
-    <entry file="file://$PROJECT_DIR$/src/common/api.js" />
-    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/question-detail.we" />
     <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/notes.js" />
     <entry file="file://$PROJECT_DIR$/src/modules/note_detail.we" />
     <entry file="file://$PROJECT_DIR$/src/res/nav_title.png" />
-    <entry file="file://$PROJECT_DIR$/src/modules/read.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/movie.we" />
-    <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we" />
     <entry file="file://$PROJECT_DIR$/dist/modules/news.js" />
     <entry file="file://$PROJECT_DIR$/src/modules/notes.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/note_item.we" />
-    <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we" />
     <entry file="file://$PROJECT_DIR$/src/modules/main.we" />
     <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" />
     <entry file="file://$PROJECT_DIR$/src/modules/read_item.we" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/npm-debug.log.3550197610" />
-    <entry file="file://$PROJECT_DIR$/src/modules/news.we" />
+    <entry file="file://$PROJECT_DIR$/src/weex_tmp/h5_render/dist/weex.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="327" column="60" lean-forward="false" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weex_tmp/h5_render/dist/weex.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="0" column="6200" lean-forward="false" selection-start-line="0" selection-start-column="6200" selection-end-line="0" selection-end-column="6200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weex_tmp/h5_render/dist/weex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="321" column="45" lean-forward="false" selection-start-line="321" selection-start-column="45" selection-end-line="321" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexBaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="173" column="37" lean-forward="false" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack-livereload-plugin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weextwo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -682,8 +856,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/read.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/nav_bar_normal.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
