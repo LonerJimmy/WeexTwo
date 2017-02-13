@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="hot reload">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexBaseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexDebugActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_dynamic.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/content_dynamic.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-item.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/carouse-list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/essay-detail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie-detail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/movie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav-bar-normal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/nav-bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/news_detail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/question-detail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/read_item.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/playground/app/src/main/assets/dist/modules/serial-detail.js" afterPath="" />
+    <list default="true" id="64fd144b-6205-4e42-902d-92c18ca048ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/libraries/rules_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/misc.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/android/playground/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/MainActivity.java" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexBaseActivity.java" afterPath="$PROJECT_DIR$/android/playground/app/src/main/java/com/alibaba/weex/WeexBaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/playground/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/android/playground/app/src/main/res/menu/main.xml" />
     </list>
     <list id="b23c399a-40e0-4d54-abb1-3a99e8dd0559" name="Failed commit: Default" comment="news detail web view added" />
     <list id="c5a9e037-0dd6-4891-bd87-1bdf9a73a1f5" name="Failed commit: Default (2)" comment="top new view added" />
@@ -56,8 +31,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -66,8 +41,8 @@
       <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="135">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -520,7 +495,7 @@
       <workItem from="1486619805777" duration="976000" />
       <workItem from="1486700826923" duration="4474000" />
       <workItem from="1486875190126" duration="4378000" />
-      <workItem from="1486963605165" duration="2715000" />
+      <workItem from="1486963605165" duration="7250000" />
     </task>
     <task id="LOCAL-00001" summary="删除无效文件">
       <created>1477790580364</created>
@@ -655,11 +630,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486567014964</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="hot reload">
+      <created>1486968285809</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1486968285809</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146866000" />
+    <option name="totallyTimeSpent" value="151401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,9 +661,11 @@
       <window_info id="Weex Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33144155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31678832" sideWeight="0.50292397" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28376845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42607683" sideWeight="0.49707603" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -695,7 +679,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -703,7 +686,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4431818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -743,7 +725,8 @@
     <MESSAGE value="日记功能添加——长按删除功能" />
     <MESSAGE value="日记功能添加——删除movie" />
     <MESSAGE value="debug模式和刷新按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug模式和刷新按钮" />
+    <MESSAGE value="hot reload" />
+    <option name="LAST_COMMIT_MESSAGE" value="hot reload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,19 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
-      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/read.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
@@ -877,7 +847,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
+    <entry file="file://$PROJECT_DIR$/src/modules/nav-bar-normal.we">
       <provider selected="true" editor-type-id="WeexFxPreviewEditor">
         <state />
       </provider>
@@ -887,10 +857,23 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/news_detail.we">
+      <provider selected="true" editor-type-id="WeexFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>

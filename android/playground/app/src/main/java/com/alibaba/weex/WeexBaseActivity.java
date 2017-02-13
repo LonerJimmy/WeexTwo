@@ -53,7 +53,6 @@ public abstract class WeexBaseActivity extends AppCompatActivity implements IWXR
 
         loadWXfromService(getIndexUrl());
         initHotRefresh();
-
         startHotRefresh();
     }
 
@@ -133,6 +132,7 @@ public abstract class WeexBaseActivity extends AppCompatActivity implements IWXR
             initDebugEnvironment(true, getHost());
             WXSDKEngine.reload();
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -166,7 +166,7 @@ public abstract class WeexBaseActivity extends AppCompatActivity implements IWXR
 
     private void initDebugEnvironment(boolean enable, String host) {
         WXEnvironment.sRemoteDebugMode = enable;
-        WXEnvironment.sRemoteDebugProxyUrl = "ws://" + host + ":8082";
+        WXEnvironment.sRemoteDebugProxyUrl = "ws://" + host + ":8088/debugProxy/native";
     }
 
     private void loadWXfromLocal() {
@@ -190,6 +190,12 @@ public abstract class WeexBaseActivity extends AppCompatActivity implements IWXR
             case Constants.HOT_REFRESH_REFRESH:
                 Log.e("loner", getHotRefreshUrl());
                 loadWXfromService(getIndexUrl());
+                break;
+            case Constants.HOT_REFRESH_DISCONNECT:
+                HotRefreshManager.getInstance().disConnect();
+                break;
+            case Constants.HOT_REFRESH_CONNECT_ERROR:
+                Toast.makeText(this, "hot refresh connect error!", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
