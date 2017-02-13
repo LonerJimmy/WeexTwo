@@ -30,8 +30,8 @@ npm run dev
 weex main.js
 ```
 
-使用android studio打开playground，运行app，修改代码，就可以直接看到效果了。
-这样调试起来就非常方便，你在pc上直接修改代码，刷新一下app右上角的刷新按钮，就可以立即看到效果。
+-  使用android studio打开playground，运行app，修改代码，就可以直接看到效果了。
+-  如果更改代码没有效果，点一下app右上角的刷新按钮，也可以立即看到效果。
 
 # 运行结果
 
