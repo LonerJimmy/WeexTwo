@@ -23,6 +23,14 @@ AppConfig.setLaunchUrl("10.12.65.120");
 ``` java
 npm run dev
 ```
+
+最新增加hot reload功能，修改完代码后，可以在android上直接看到效果。
+打开命令行，进入目录src下，执行
+``` java
+weex main.js
+```
+
+使用android studio打开playground，运行app，修改代码，就可以直接看到效果了。
 这样调试起来就非常方便，你在pc上直接修改代码，刷新一下app右上角的刷新按钮，就可以立即看到效果。
 
 # 运行结果
