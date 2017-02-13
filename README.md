@@ -13,11 +13,23 @@ npm install
 ``` java
 npm run build
 ```
-然后用studio打开playground代码，把IndexActivity.java中的代码
+然后用studio打开playground代码，把MainActivity.java中的代码
 ``` java
-AppConfig.setLaunchUrl("10.12.65.120");
+    @Override
+    protected String getHost() {
+        return "10.12.65.114";
+    }
 ```
-中的url修改成你pc的ip就可以了，然后运行app。
+中的return的string修改成你pc的ip就可以了。
+
+把MainActivity.java中的代码
+``` java
+@Override
+    protected String setHotRefreshUrl() {
+        return "main";
+    }
+```
+中return的string修改成你要调试的we文件的名字就可以了。
 
 启动watch服务以及debug服务命令如下：
 ``` java
@@ -25,7 +37,7 @@ npm run dev
 ```
 
 最新增加hot reload功能，修改完代码后，可以在android上直接看到效果。
-打开命令行，进入目录src下，执行
+打开命令行，进入目录src下，执行（weex后面增加的是你要调试的文件名，如果你修改了文件名，只要把下面对应的文件名修改一下就可以了）
 ``` java
 weex main.js
 ```
