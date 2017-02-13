@@ -13,27 +13,55 @@ npm install
 ``` java
 npm run build
 ```
-然后用studio打开playground代码，把IndexActivity.java中的代码
+然后用studio打开playground代码，把MainActivity.java中的代码
 ``` java
-AppConfig.setLaunchUrl("10.12.65.120");
+    @Override
+    protected String getHost() {
+        return "10.12.65.114";
+    }
 ```
-中的url修改成你pc的ip就可以了，然后运行app。
+中的return的string修改成你pc的ip就可以了。
+
+把MainActivity.java中的代码
+``` java
+@Override
+    protected String setHotRefreshUrl() {
+        return "main";
+    }
+```
+中return的string修改成你要调试的we文件的名字就可以了。
 
 启动watch服务以及debug服务命令如下：
 ``` java
 npm run dev
 ```
-这样调试起来就非常方便，你在pc上直接修改代码，刷新一下app右上角的刷新按钮，就可以立即看到效果。
+
+最新增加hot reload功能，修改完代码后，可以在android上直接看到效果。
+打开命令行，进入目录src下，执行（weex后面增加的是你要调试的文件名，如果你修改了文件名，只要把下面对应的文件名修改一下就可以了）
+``` java
+weex main.js
+```
+
+-  使用android studio打开playground，运行app，修改代码，就可以直接看到效果了。
+-  如果更改代码没有效果，点一下app右上角的刷新按钮，也可以立即看到效果。
 
 # 运行结果
 
-![新闻列表](http://img.blog.csdn.net/20170206214702556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+新闻列表
 
-![新闻详情](http://img.blog.csdn.net/20170206214738150?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+<img src="http://img.blog.csdn.net/20170206214738150?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="200px" height="400px"/>
 
-![日记列表](http://img.blog.csdn.net/20170206214802174?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+新闻详情
 
-![日记详情](http://img.blog.csdn.net/20170206214852994?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+<img src="http://img.blog.csdn.net/20170206214702556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="200px" height="400px"/>
+
+日记列表
+
+<img src="http://img.blog.csdn.net/20170206214802174?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="200px" height="400px"/>
+
+写日记
+
+<img src="http://img.blog.csdn.net/20170206214852994?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemptMDUxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="200px" height="400px"/>
 
 还有上拉和下拉刷新，我没有截图下来，大家可以去试试。
 
