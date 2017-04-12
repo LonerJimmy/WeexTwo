@@ -39,7 +39,7 @@ npm run dev
 最新增加hot reload功能，修改完代码后，可以在android上直接看到效果。
 打开命令行，进入目录src下，执行（weex后面增加的是你要调试的文件名，如果你修改了文件名，只要把下面对应的文件名修改一下就可以了）
 ``` java
-weex main.js
+weex main.js --qr
 ```
 
 -  使用android studio打开playground，运行app，修改代码，就可以直接看到效果了。
